@@ -77,7 +77,7 @@ issue_certificate(
 
 ## License
 
-["0xf64d842432e45c8dac495b07fb2199ed5042f1e6db234936819025d85f07076"]
+["0x30466c21b4c048a79b9cc469b901be9c87581aa0782820e2d54a5081d4123fae"]
 
 ## Contributing
 
