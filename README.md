@@ -53,7 +53,7 @@ This Aptos Move smart contract provides a secure and transparent mechanism for v
 ## License
 
 ["0x30466c21b4c048a79b9cc469b901be9c87581aa0782820e2d54a5081d4123fae"]
-![image](https://github.com/user-attachments/assets/d8df17a7-a742-4d32-98a7-2e843e28bb6a)
+
 
 
 ## Contributing
