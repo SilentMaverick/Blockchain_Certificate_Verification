@@ -11,6 +11,7 @@ This Aptos Move smart contract provides a secure and transparent mechanism for v
 - Access Control Mechanisms
 
 ## Contract Structure
+![image](https://github.com/user-attachments/assets/4267e62f-a1dd-46f3-a74a-92ad494e26c9)
 
 ### Structs
 
@@ -48,36 +49,12 @@ This Aptos Move smart contract provides a secure and transparent mechanism for v
 2. Deploy to the Aptos blockchain
 3. Initialize verified institutions
 
-## Usage Example
-
-```move
-// Add a verified institution
-add_verified_institution(admin, string::utf8(b"University of Blockchain"));
-
-// Issue a certificate
-issue_certificate(
-    issuer, 
-    holder_address, 
-    string::utf8(b"University of Blockchain"), 
-    string::utf8(b"Master of Blockchain Technology")
-);
-```
-
-## Security Considerations
-
-- Only module admin can add verified institutions
-- Certificates can only be issued by verified institutions
-- Immutable certificate records
-
-## Future Improvements
-
-- Add certificate revocation mechanism
-- Implement more detailed access controls
-- Create certificate validation function
 
 ## License
 
 ["0x30466c21b4c048a79b9cc469b901be9c87581aa0782820e2d54a5081d4123fae"]
+![image](https://github.com/user-attachments/assets/d8df17a7-a742-4d32-98a7-2e843e28bb6a)
+
 
 ## Contributing
 
