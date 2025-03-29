@@ -1,61 +1,108 @@
-# Blockchain Certificate Verification Smart Contract
-##Overview
+# Blockchain Certificate System
 
-This Aptos Move smart contract provides a secure and transparent mechanism for verifying and issuing blockchain-based certificates. The contract ensures that only verified institutions can issue certificates, adding an extra layer of trust and authenticity to the certification process.
-
-## Features
-
-- Certificate Issuance
-- Institution Verification
-- Immutable Certificate Records
-- Access Control Mechanisms
-
-## Contract Structure
-![image](https://github.com/user-attachments/assets/4267e62f-a1dd-46f3-a74a-92ad494e26c9)
-
-### Structs
-
-1. `Certificate`
-   - Stores certificate details including:
-     - Holder's address
-     - Issuing institution
-     - Certificate title
-     - Issued date
-     - Verification status
-
-2. `VerifiedInstitutions`
-   - Maintains a list of verified institutions
-
-## Functions
-
-### 1. `issue_certificate()`
-- Allows verified institutions to issue certificates
-- Checks institution verification before certificate creation
-- Stores certificate on the blockchain
-
-### 2. `add_verified_institution()`
-- Enables module admin to add new verified institutions
-- Provides access control for institution verification
+A full-stack application for issuing and verifying blockchain-based certificates using the Aptos blockchain and Petra wallet.
 
 ## Prerequisites
 
-- Aptos Blockchain
-- Move Compiler
-- Aptos CLI
+- Node.js (v14 or higher)
+- npm or yarn
+- Petra Wallet browser extension
+- Aptos CLI (for smart contract deployment)
 
-## Installation
+## Project Structure
 
-1. Compile the smart contract
-2. Deploy to the Aptos blockchain
-3. Initialize verified institutions
+```
+.
+├── frontend/           # React frontend application
+├── backend/           # Node.js backend server
+└── sources/          # Aptos smart contracts
+```
 
+## Setup Instructions
 
-## License
+### Frontend Setup
 
-["0x30466c21b4c048a79b9cc469b901be9c87581aa0782820e2d54a5081d4123fae"]
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
 
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+The frontend will be available at `http://localhost:3000`
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the backend directory with the following variables:
+   ```
+   PORT=3001
+   APTOS_NODE_URL=https://fullnode.devnet.aptoslabs.com
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+The backend will be available at `http://localhost:3001`
+
+### Smart Contract Deployment
+
+1. Make sure you have the Aptos CLI installed and configured
+2. Deploy the smart contract:
+   ```bash
+   aptos move publish
+   ```
+
+## Usage
+
+1. Install the Petra Wallet browser extension
+2. Connect your Petra wallet to the application
+3. Use the form to issue new certificates
+4. Verify certificates using the certificate ID
+
+## Features
+
+- Issue blockchain-based certificates
+- Verify certificate authenticity
+- Petra wallet integration
+- Modern and responsive UI
+- Secure backend API
+
+## Security Considerations
+
+- Always verify the smart contract address before interacting
+- Keep your private keys secure
+- Use HTTPS in production
+- Implement proper input validation
+- Follow security best practices for API endpoints
 
 ## Contributing
 
-Contributions are welcome. Please submit pull requests or open issues on the project repository.
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
